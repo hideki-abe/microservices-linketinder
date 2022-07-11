@@ -1,0 +1,28 @@
+.content{
+    background-color: rgb(200, 228, 252);
+}
+.navbar-text{
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 36px;
+}
+.navbar{
+    background-color: #0d6efd;
+}
+.painel{
+    margin-top: 100px;
+    text-align: center;
+}
+.btn{
+    width: 300px;
+}
+.pergunta{
+    font-size: 36px;
+    color: #828181;
+    margin-bottom: 16px;
+}
+.text-center{
+    margin-top: 5em;
+}
+

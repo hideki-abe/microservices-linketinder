@@ -1,0 +1,14 @@
+.painel{
+    margin-top: 100px;
+    height: 30vh;
+    text-align: center;
+}
+.btn{
+    width: 300px;
+}
+.pergunta{
+    font-size: 36px;
+    color: #828181;
+    margin-bottom: 16px;
+}
+  

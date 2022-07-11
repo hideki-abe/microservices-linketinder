@@ -1,0 +1,20 @@
+<div>
+  <div class="painel">
+    <div class="nome_painel">
+      ESCOLHA SUA VAGA
+    </div>
+    <div class="pessoa" *ngIf="vaga">
+      <div class="nome">Nome: {{vaga.nome}}</div>
+      <hr />
+      <div class="descricao">Descricao: {{vaga.descricao}}</div>
+      <hr />
+      <div class="pais">País: {{vaga.lugar}}</div>
+    </div>
+    <button 
+    (click)="vagaAleatoria()"
+    class="botao_like">GOSTEI</button>
+    <button 
+    (click)="vagaAleatoria()"
+    class="botao_deslike">NÃO GOSTEI</button>
+  </div>
+</div>

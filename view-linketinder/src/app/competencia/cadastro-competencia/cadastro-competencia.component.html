@@ -1,0 +1,21 @@
+<div id="competencias">
+    <div class="titulo">Competencias</div>
+    <div class="form-check" *ngFor="let competencia of competencias">
+      <input
+        class="form-check-input"
+        type="radio"
+        name="exampleRadios"
+        id="exampleRadios1"
+        value="{{competencia}}"
+        (change)="radioChangeHandler(competencia)"/>
+        {{competencia.nome}}
+      </div>
+
+    <p><span>Você selecionou: </span><b>{{competenciaSelecionada.nome}}</b></p>
+    <button
+    type="submit"
+    value="Cadastrar"
+    class="btn btn-primary btn-lg"
+    (click)="create(competenciaSelecionada)"
+    >Cadastrar</button>
+</div>

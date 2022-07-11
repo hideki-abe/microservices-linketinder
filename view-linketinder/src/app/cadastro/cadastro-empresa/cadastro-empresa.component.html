@@ -1,0 +1,25 @@
+<div>
+  <div class="titulo">CADASTRO DE EMPRESA</div>
+  <div class="painel_cadastro">
+    <form class="form_cadastro" #empresasForm="ngForm" (ngSubmit)="create(empresasForm.value)">
+      <label for="nome">Nome:</label><br />
+      <input type="text" id="nome" name="nome" ngModel/><br />
+      <label for="email">Email:</label><br />
+      <input type="text" id="email" name="email" ngModel/><br />
+      <label for="cpf">Cnpj:</label><br />
+      <input type="text" id="cnpj" name="cnpj" ngModel/><br />
+      <label for="idade">País:</label><br />
+      <input type="text" id="pais" name="pais" ngModel/><br />
+      <label for="estado">Estado:</label><br />
+      <input type="text" id="estado" name="estado" ngModel/><br />
+      <label for="cep">Cep:</label><br />
+      <input type="text" id="cep" name="cep" ngModel/><br />
+      <label for="descricao">Descrição:</label><br />
+      <input type="text" id="descricao" name="descricao" ngModel/><br />
+      <label for="senha">Senha:</label><br />
+      <input type="text" id="senha" name="senha" ngModel/><br />
+
+      <input type="submit" value="Cadastrar" class="btn btn-primary btn-lg">
+    </form>
+  </div>
+</div>

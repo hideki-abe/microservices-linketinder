@@ -1,0 +1,16 @@
+<div>
+    <div class="titulo">CADASTRO DE VAGA</div>
+    <div class="painel_cadastro">
+      <form class="form_cadastro" #vagasForm="ngForm" (ngSubmit)="create(vagasForm.value)">
+        <label for="nome">Nome:</label><br />
+        <input type="text" id="nome" name="nome" ngModel/><br />
+        <label for="descricao">Descrição:</label><br />
+        <input type="text" id="descricao" name="descricao" ngModel/><br />
+        <label for="lugar">Lugar:</label><br />
+        <input type="text" id="lugar" name="lugar" ngModel/><br />
+  
+        <input type="submit" value="Cadastrar" class="btn btn-primary btn-lg">
+      </form>
+    </div>
+  </div>
+  

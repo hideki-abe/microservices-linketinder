@@ -1,0 +1,33 @@
+<div>
+  <div class="painel">
+    <div class="nome_painel">
+      ESCOLHA SEUS CANDIDATOS
+    </div>
+    <div class="pessoa" *ngIf="candidato">
+      <div class="nome">Nome: {{candidato.nome}} {{candidato.sobrenome}}</div>
+      <hr />
+      <div class="sobrenome">Descrição: {{candidato.descricao}}</div>
+      <hr />
+      <div class="dataNasc">País: {{candidato.pais}}</div>
+      <hr />
+      <div class="email">Email: {{candidato.email}</div>
+      <hr />
+      <div class="pais">País: {{candidato.pais}}</div>
+      <hr />
+      <div class="cep">Cep: {{candidato.cep}}</div>
+      <hr />
+      <div class="descricao">Descrição: {{candidato.descricao}}</div>
+      <!--
+      <hr />
+      <div class="competencias">Competências: {{candidato.competencias}}</div>
+      -->
+    </div>
+    <button 
+    (click)="candidatoAleatorio()"
+    class="botao_like">GOSTEI</button>
+    <button 
+    (click)="candidatoAleatorio()"
+    class="botao_deslike">NÃO GOSTEI</button>
+  </div>
+  <a [routerLink]="['cadastro/vaga']" class="cadastro_de_vaga">Cadastre uma nova vaga</a>
+</div>
