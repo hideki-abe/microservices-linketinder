@@ -12,7 +12,6 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="crud-cadastro" target="11" />
-      <module name="zghero-api" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

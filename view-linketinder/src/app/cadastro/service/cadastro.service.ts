@@ -12,24 +12,20 @@ export class CadastroService {
   
   onCandidatoCreate(candidatos: any){
       console.log(candidatos);
-      /*
-      this.httpClient.post("http://localhost:8080/zghero/candidatos", candidatos)
+      this.httpClient.post("http://localhost:8082/zghero/candidatos", candidatos)
       .subscribe((response) => {
         this.router.navigateByUrl('/candidato/competencias');
       });
-      */
       this.router.navigateByUrl('/candidato/competencias');
   }
 
   onEmpresaCreate(empresas: any){
     console.log(empresas);
-    /*
-    this.httpClient.post("http://localhost:8080/zghero/empresas", empresas)
+    this.httpClient.post("http://localhost:8082/zghero/empresas", empresas)
     .subscribe((response) => {
       this.router.navigateByUrl('/empresa/perfil');
       console.log(response);
     });
-    */
     this.router.navigateByUrl('/empresa/perfil');
 }
 

@@ -14,16 +14,16 @@ export class CompetenciaService {
   constructor(private httpClient: HttpClient, private router: Router) { }
 
   listCompetencias(): Observable<any> {
-    return this.httpClient.get("http://localhost:8080/zghero/competencias");
+    return this.httpClient.get("http://localhost:8081/zghero/competencias");
   }
 
   onCompetenciaCreate(candidatoCompetencia: CandidatoCompetencia){
 
-    this.httpClient.post("http://localhost:8080/zghero/competencia-candidato", candidatoCompetencia)
+    this.httpClient.post("http://localhost:8081/zghero/competencia-candidato", candidatoCompetencia)
     .subscribe((response) => {
-      //this.router.navigateByUrl('/candidato/perfil');
+      this.router.navigateByUrl('/candidato/perfil');
     });
-    //this.router.navigateByUrl('/candidato/perfil');
+    this.router.navigateByUrl('/candidato/perfil');
 
 }
 

@@ -17,7 +17,7 @@ export class PerfilService {
   }
 
   listCandidatos(): Observable<any> {
-    return this.httpClient.get("http://localhost:8080/zghero/candidatos");
+    return this.httpClient.get("http://localhost:8082/zghero/candidatos");
   }
 
 }
