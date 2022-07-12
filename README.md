@@ -15,10 +15,10 @@ Aplicação fullstack com estrutura de microserviços, separada em: API Spring, 
   
   server port=8080
   
-  A <a href="https://app.swaggerhub.com/apis/HIDEKIABE/vagas/1.0.0">documentação</a> foi feita no Swagger Editor.
+  A <a href="https://app.swaggerhub.com/apis-docs/HIDEKIABE/vagas/1.0.0#/">documentação</a> foi feita no Swagger Editor.
 
   ### Micronaut Framework: 
   
   server port=8081
   
-  A <a href="https://app.swaggerhub.com/apis/HIDEKIABE/competencias/1.0.0">documentação</a> foi feita no Swagger Editor.
+  A <a href="https://app.swaggerhub.com/apis-docs/HIDEKIABE/competencias/1.0.0">documentação</a> foi feita no Swagger Editor.
