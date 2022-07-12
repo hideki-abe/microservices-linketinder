@@ -13,7 +13,7 @@ import jakarta.inject.Inject
 
 import javax.validation.Valid
 
-@Controller("zghero/competencias")
+@Controller("zghero")
 class CompetenciaController {
 
     @Inject
@@ -22,18 +22,18 @@ class CompetenciaController {
     @Inject
     CompetenciaRepository competenciaRepository
 
-    @Post("/")
+    @Post("competencias")
     Competencia save(@Valid Competencia competencia){
         return competenciaRepository.save(competencia)
     }
 
-    @Put("/{id}")
+    @Put("competencias/{id}")
     Competencia update(@PathVariable Long id, @Valid @Body Competencia competencia){
         competencia.id = id
         return competenciaRepository.save(competencia)
     }
 
-    @Get("/")
+    @Get("competencias/")
     List<Competencia> getCompetencias(){
         return competenciaRepository.findAll()
     }

@@ -10,7 +10,7 @@ import jakarta.inject.Inject
 
 import javax.validation.Valid
 
-@Controller("/zghero/competencia-candidato")
+@Controller("/zghero")
 class CandidatoCompetenciaController {
 
     @Inject
@@ -19,12 +19,12 @@ class CandidatoCompetenciaController {
     @Inject
     CandidatoCompetenciaService service
 
-    @Post("/")
+    @Post("/competencia-candidato")
     CandidatoCompetencia save(@Valid CandidatoCompetencia candidatoCompetencia){
         return repository.save(candidatoCompetencia)
     }
 
-    @Get("/")
+    @Get("/competencia-candidato")
     List<CandidatoCompetencia> getCandidatosCompetencias(){
         return repository.findAll()
     }
