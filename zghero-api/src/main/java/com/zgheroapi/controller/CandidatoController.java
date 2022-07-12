@@ -16,7 +16,7 @@ import java.util.List;
 @Api("Api candidatos")
 public class CandidatoController {
 
-    private Candidatos repository;
+    Candidatos repository;
 
     public CandidatoController(Candidatos repository){
         this.repository = repository;

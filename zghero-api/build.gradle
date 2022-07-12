@@ -28,7 +28,7 @@ dependencies {
     testImplementation group: 'org.codehaus.groovy', name: 'groovy', version: '3.0.6'
 
     compileOnly 'org.projectlombok:lombok'
-    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools:2.7.0'
     runtimeOnly 'org.postgresql:postgresql'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation('org.springframework.boot:spring-boot-starter-test:2.7.0')
