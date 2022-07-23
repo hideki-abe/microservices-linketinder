@@ -13,7 +13,7 @@ export class VagaService {
       console.log(vagas);
       this.httpClient.post("http://localhost:8080/zghero/vagas", vagas)
       .subscribe((response) => {
-        //this.router.navigateByUrl('/empresa/perfil');
+        this.router.navigateByUrl('/empresa/perfil');
       });
   }
 }
