@@ -26,8 +26,7 @@ Aplicação fullstack com estrutura de microserviços, separada em: API Spring, 
 
 ## Configuração de Kafka
 
-
-  ### Passos:
+  ### Cheat Sheet:
       
   1. Inicialização do zookeeper: zookeeper-server-start.sh /home/hidekiabe/kafka/config/zookeeper.properties 
   2. Inicialização do kafka: kafka-server-start.sh /home/hidekiabe/kafka/config/server.properties
@@ -43,6 +42,11 @@ Aplicação fullstack com estrutura de microserviços, separada em: API Spring, 
   10. Deletando tópico: kafka-topics.sh --bootstrap-server localhost:9092 --delete --topic teste
   11. Mensagens com chave e valor: kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic teste --property "print.key=true" --property "key.separator=," --group  grupo1
 
+  ### Inicialização do Kafka no projeto
   
+  - Inicie os comandos 1 e 2 no terminal
+  - Inicie todos os microserviços da aplicação, a view e também o de notificação de vaga que está <a href="https://github.com/hideki-abe/envio-de-email">nesse repositório</a>
+  - Para testar a comunicação do kafka, insira uma nova vaga. 
+  
+  Obs.: O envio de email para os emails cadastrados não está completamente implementado por ocorrência de alguns bugs.
 
-  
