@@ -76,8 +76,9 @@ Aplicação fullstack com estrutura de microserviços, separada em: API Spring, 
   17. obter informações da imagem: docker image inspect redis:latest
   18. adicionar nova tag da imagem:  docker image tag redis:latest cod3r-redis
   19. remover imagem: docker image rm redis:latest cod3r-redis
-  20. docker image build -t ex-simples-build .
-
+  20. dar build em uma imagem: docker image build -t ex-simples-build .
+  21. imprimindo valor da variável: docker container run ex-build-arg bash -c 'echo $S3_BUCKET'
+  22. alterando valor da variável: sudo docker image build --build-arg S3_BUCKET-myapp -t ex-build-arg .
   
 
 
