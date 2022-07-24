@@ -72,6 +72,12 @@ Aplicação fullstack com estrutura de microserviços, separada em: API Spring, 
   13. listar imagens: docker image ls
   14. listar volumes: docker volume ls
   15. remover imagem: docker image rm <código da imagem>
+  16. baixar uma imagem: docker imagem pull redis:latest
+  17. obter informações da imagem: docker image inspect redis:latest
+  18. adicionar nova tag da imagem:  docker image tag redis:latest cod3r-redis
+  19. remover imagem: docker image rm redis:latest cod3r-redis
+  20. docker image build -t ex-simples-build .
+
   
 
 
