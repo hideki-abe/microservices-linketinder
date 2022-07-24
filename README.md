@@ -79,9 +79,15 @@ Aplicação fullstack com estrutura de microserviços, separada em: API Spring, 
   20. dar build em uma imagem: docker image build -t ex-simples-build .
   21. imprimindo valor da variável: docker container run ex-build-arg bash -c 'echo $S3_BUCKET'
   22. alterando valor da variável: sudo docker image build --build-arg S3_BUCKET-myapp -t ex-build-arg .
-  
-
-
+  23. gerando nova tag: docker image tag <nome da imagem> hidekiabee/simple-build:1.0
+  24. logando: docker login --username=hidekiabee
+  25. fazendo push: docker image push hidekiabee/simple-build:1.0
+  26. visualizar as redes: docker network ls
+  27. acessar rede: docker container run -d --net none debian
+  28. inspecionar rede: docker network inspect <nome da rede>
+  29. criação de container para ficar rodando: docker container run -d --name container1 alpine sleep 1000
+  30. executar container: docker container exec -it container if config
+  31. criar nova rede: docker network create --driver bridge <rede_nova>
     
     
     
